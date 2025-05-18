@@ -63,7 +63,7 @@ namespace FreeSWITCH {
         static string shadowDir;
         
         public static bool Load() {
-            managedDir = Path.Combine(Native.freeswitch.SWITCH_GLOBAL_dirs.mod_dir, "managed");
+            managedDir = Path.Combine(Native.freeswitch.SWITCH_GLOBAL_dirs.mod_dir, "core");
             shadowDir = Path.Combine(managedDir, "shadow");
             if (Directory.Exists(shadowDir)) {
                 try {
@@ -75,7 +75,7 @@ namespace FreeSWITCH {
                 Directory.CreateDirectory(shadowDir);
             }
 
-            Log.WriteLine(LogLevel.Debug, "FreeSWITCH.Managed loader is starting with directory '{0}'.", managedDir);
+            Log.WriteLine(LogLevel.Debug, "FreeSWITCH.Core loader is starting with directory '{0}'.", managedDir);
             if (!Directory.Exists(managedDir)) {
                 Log.WriteLine(LogLevel.Error, "Managed directory not found: {0}", managedDir);
                 return false;
@@ -227,7 +227,7 @@ namespace FreeSWITCH {
                 setup.ConfigurationFile = fileName + ".config";
             }
             setup.ApplicationBase = Native.freeswitch.SWITCH_GLOBAL_dirs.mod_dir;
-            setup.LoaderOptimization = LoaderOptimization.MultiDomainHost; // TODO: would MultiDomain work better since FreeSWITCH.Managed isn't gac'd?
+            setup.LoaderOptimization = LoaderOptimization.MultiDomainHost; // TODO: would MultiDomain work better since FreeSWITCH.Core isn't gac'd?
             setup.CachePath = shadowDir;
             setup.ShadowCopyFiles = "true";
 
@@ -238,17 +238,17 @@ namespace FreeSWITCH {
                 .Select(x => x.Trim())
                 .ToList();
 
-            // adding "managed" (modules) directory
-            if (!binPaths.Contains("managed")) {
-                binPaths.Add("managed");
+            // adding "core" (modules) directory
+            if (!binPaths.Contains("core")) {
+                binPaths.Add("core");
             }
 
-            // adding "managed/<modulename>" directory for per-module references support
+            // adding "core/<modulename>" directory for per-module references support
             var moduleRefsDir = Path.GetFileName(fileName);
             moduleRefsDir = Path.GetFileNameWithoutExtension(moduleRefsDir);
 
             if (moduleRefsDir != null && moduleRefsDir.Trim() != "") {
-                moduleRefsDir = Path.Combine("managed", moduleRefsDir);
+                moduleRefsDir = Path.Combine("core", moduleRefsDir);
                 if (!binPaths.Contains(moduleRefsDir, StringComparer.OrdinalIgnoreCase)) {
                     binPaths.Add(moduleRefsDir);
                 }
@@ -432,7 +432,7 @@ namespace FreeSWITCH {
 
         public static bool Run(string command, IntPtr sessionHandle) {
             try {
-                Log.WriteLine(LogLevel.Debug, "FreeSWITCH.Managed: attempting to run application '{0}'.", command);
+                Log.WriteLine(LogLevel.Debug, "FreeSWITCH.Core: attempting to run application '{0}'.", command);
                 System.Diagnostics.Debug.Assert(sessionHandle != IntPtr.Zero, "sessionHandle is null.");
                 var parsed = parseCommand(command);
                 if (parsed == null) return false;

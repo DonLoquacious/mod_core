@@ -94,7 +94,7 @@ namespace FreeSWITCH {
         Assembly compileAssembly(string fileName) {
             var comp = new CompilerParameters();
             var mainRefs = new List<string> { 
-                Path.Combine(Native.freeswitch.SWITCH_GLOBAL_dirs.mod_dir, "FreeSWITCH.Managed.dll"),
+                Path.Combine(Native.freeswitch.SWITCH_GLOBAL_dirs.mod_dir, "FreeSWITCH.Core.dll"),
                 "System.dll", "System.Xml.dll", "System.Data.dll" 
             };
             var extraRefs = new List<string> {
@@ -234,10 +234,6 @@ namespace FreeSWITCH {
         }
 
         static Action getEntryDelegate(MethodInfo entryPoint) {
-            if (!entryPoint.IsPublic || !entryPoint.DeclaringType.IsPublic) {
-                Log.WriteLine(LogLevel.Error, "Entry point: {0}.{1} is not public. This may cause errors with Mono.",
-                    entryPoint.DeclaringType.FullName, entryPoint.Name);
-            }
             var dm = new DynamicMethod(entryPoint.DeclaringType.Assembly.GetName().Name + "_entrypoint_" + entryPoint.DeclaringType.FullName + entryPoint.Name, null, null, true);
             var il = dm.GetILGenerator();
             var args = entryPoint.GetParameters();

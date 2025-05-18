@@ -21,7 +21,7 @@ extern mod_core_globals core_globals;
 
 #ifdef WIN32
 #define RESULT_FREE(x) CoTaskMemFree(x)
-else
+#else
 #define RESULT_FREE(x) free(x)
 #endif
 

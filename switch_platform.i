@@ -1,5 +1,4 @@
 %include ../../../../swig_common.i
-
 typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
 typedef unsigned long uint32_t;
@@ -10,8 +9,8 @@ typedef int int32_t;
 typedef long long int64_t;
 typedef unsigned long in_addr_t;
 
-%typemap(imtype, out="string") char ** "ref string"
-%typemap(cstype, out="string") char ** "ref string"
+%typemap(imtype, out="string") char **   "ref string"
+%typemap(cstype, out="string") char **   "ref string"
 %typemap(csin) char **     "ref $csinput"
 %typemap(csvarin) char **
 %{
@@ -24,6 +23,7 @@ typedef unsigned long in_addr_t;
   }
 %}
 
+// const char ** -> out string
 %typemap(imtype, out="string") const char ** "ref global::System.IntPtr"
 %typemap(cstype, out="string") const char ** "out string"
 %typemap(csin,

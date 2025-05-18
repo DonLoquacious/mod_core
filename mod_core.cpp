@@ -1,10 +1,13 @@
 #include <switch.h>
 #include "freeswitch_core.h"
+
+#ifdef _CORE
 #include <mscoree.h>
 
 using namespace System;
 using namespace System::Runtime::InteropServices;
 #define MOD_CORE_VERSION "CoreCLR Version"
+#endif
 
 SWITCH_BEGIN_EXTERN_C
 
@@ -149,7 +152,7 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
     return SWITCH_STATUS_NOUNLOAD;
 }
 
-SWITCH_STANDARD_API(managedrun_api_function)
+SWITCH_STANDARD_API(core_run_api_function)
 {
 	if (zstr(cmd)) {
 		stream->write_function(stream, "-ERR no args specified!\n");
@@ -166,7 +169,7 @@ SWITCH_STANDARD_API(managedrun_api_function)
 	return SWITCH_STATUS_SUCCESS;
 }
 
-SWITCH_STANDARD_API(managed_api_function)
+SWITCH_STANDARD_API(core_api_function)
 {
 	if (zstr(cmd)) {
 		stream->write_function(stream, "-ERR no args specified!\n");
@@ -181,7 +184,7 @@ SWITCH_STANDARD_API(managed_api_function)
 	return SWITCH_STATUS_SUCCESS;
 }
 
-SWITCH_STANDARD_APP(managed_app_function)
+SWITCH_STANDARD_APP(core_app_function)
 {
 	if (zstr(data)) {
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_ERROR, "No args specified!\n");
@@ -194,7 +197,7 @@ SWITCH_STANDARD_APP(managed_app_function)
 	}
 }
 
-SWITCH_STANDARD_API(managedreload_api_function)
+SWITCH_STANDARD_API(core_reload_api_function)
 {
 	if (zstr(cmd)) {
 		stream->write_function(stream, "-ERR no args specified!\n");
@@ -209,7 +212,7 @@ SWITCH_STANDARD_API(managedreload_api_function)
 	return SWITCH_STATUS_SUCCESS;
 }
 
-SWITCH_STANDARD_API(managedlist_api_function)
+SWITCH_STANDARD_API(core_list_api_function)
 {
 	listDelegate(cmd, stream, stream->param_event);
 	return SWITCH_STATUS_SUCCESS;

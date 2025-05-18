@@ -31,6 +31,8 @@ public ref class FreeSwitchCore {
 	static MethodInfo^ loadMethod;
 };
 
+#endif
+
 class ManagedSession:public CoreSession {
   public:
 	ManagedSession(void);
@@ -47,5 +49,4 @@ class ManagedSession:public CoreSession {
 	hangupFunction hangupDelegate;
 };
 
-#endif
 #endif

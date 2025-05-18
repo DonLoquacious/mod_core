@@ -59077,6 +59077,52 @@ SWIGEXPORT int SWIGSTDCALL CSharp_FreeSWITCHfNative_dtmf_callback___(void * jarg
 }
 
 
+SWIGEXPORT void * SWIGSTDCALL CSharp_FreeSWITCHfNative_new_ManagedSession__SWIG_0___() {
+  void * jresult ;
+  ManagedSession *result = 0 ;
+  
+  result = (ManagedSession *)new ManagedSession();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_FreeSWITCHfNative_new_ManagedSession__SWIG_1___(char * jarg1) {
+  void * jresult ;
+  char *arg1 = (char *) 0 ;
+  ManagedSession *result = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  result = (ManagedSession *)new ManagedSession(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_FreeSWITCHfNative_new_ManagedSession__SWIG_2___(void * jarg1) {
+  void * jresult ;
+  switch_core_session_t *arg1 = (switch_core_session_t *) 0 ;
+  ManagedSession *result = 0 ;
+  
+  arg1 = (switch_core_session_t *)jarg1; 
+  result = (ManagedSession *)new ManagedSession(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_FreeSWITCHfNative_delete_ManagedSession___(void * jarg1) {
+  ManagedSession *arg1 = (ManagedSession *) 0 ;
+  
+  arg1 = (ManagedSession *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT CoreSession * SWIGSTDCALL CSharp_FreeSWITCHfNative_ManagedSession_SWIGUpcast___(ManagedSession *jarg1) {
+    return (CoreSession *)jarg1;
+}
+
 #ifdef __cplusplus
 }
 #endif

@@ -24,7 +24,6 @@ set(NATIVE_SOURCES
 add_library(mod_core SHARED ${NATIVE_SOURCES})
 
 # Specify include directories for native code.
-target_include_directories(mod_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(mod_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../../include)
 
 # Define a preprocessor symbol for mod_core.
@@ -61,7 +60,6 @@ set(CS_SOURCES
 add_library(FreeSwitch.Core SHARED ${CS_SOURCES})
 
 # Set Visual Studio-specific properties:
-# Targeting .NET 5.0; adjust target framework version if necessary.
 set_target_properties(FreeSwitch.Core PROPERTIES
     DOTNET_TARGET_FRAMEWORK "9.0"
     VS_DOTNET_OUTPUT_TYPE "Library"

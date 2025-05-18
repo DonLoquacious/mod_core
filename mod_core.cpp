@@ -3,10 +3,12 @@
 
 #ifdef _CORE
 #include <mscoree.h>
+#define MOD_CORE_VERSION "CoreCLR Version"
 
+#ifdef __cplusplus_cli
 using namespace System;
 using namespace System::Runtime::InteropServices;
-#define MOD_CORE_VERSION "CoreCLR Version"
+#endif
 #endif
 
 SWITCH_BEGIN_EXTERN_C
@@ -64,6 +66,7 @@ SWITCH_MOD_DECLARE_NONSTD(void) InitManagedSession(ManagedSession *session, inpu
 }
 
 #ifdef _CORE
+#ifdef __cplusplus_cli
 switch_status_t loadRuntime()
 {
     char filename[256];
@@ -101,6 +104,7 @@ switch_status_t findLoader()
     return SWITCH_STATUS_SUCCESS;
 }
 #endif
+#endif
 
 SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
 {
@@ -111,6 +115,8 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
 
     core_globals.pool = pool;
 
+#ifdef _CORE
+#ifdef __cplusplus_cli
     if (loadRuntime() != SWITCH_STATUS_SUCCESS) {
         return SWITCH_STATUS_FALSE;
     }
@@ -119,7 +125,6 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
         return SWITCH_STATUS_FALSE;
     }
 
-#ifdef _CORE
 	try {
         Object^ objResult = FreeSwitchCore::loadMethod->Invoke(nullptr, nullptr);
         success = *reinterpret_cast<bool^>(objResult);
@@ -132,6 +137,7 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
 
         return SWITCH_STATUS_FALSE;
     }
+#endif
 #endif
 
     if (success) {

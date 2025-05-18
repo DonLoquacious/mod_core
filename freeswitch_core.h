@@ -110,6 +110,7 @@ struct apr_socket_t {
 	char foo[];
 };
 
+#ifdef __cplusplus_cli
 using namespace System;
 using namespace System::Reflection;
 using namespace System::Runtime::InteropServices;
@@ -120,6 +121,7 @@ public ref class FreeSwitchCore {
 	static MethodInfo ^ loadMethod;
 };
 
+#endif
 #endif
 
 class ManagedSession:public CoreSession {

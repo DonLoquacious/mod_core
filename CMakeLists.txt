@@ -27,7 +27,7 @@ add_library(mod_core SHARED ${NATIVE_SOURCES})
 target_include_directories(mod_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../../include)
 
 # Define a preprocessor symbol for mod_core.
-target_compile_definitions(mod_core PRIVATE -DMOD_CORE)
+target_compile_definitions(mod_core PRIVATE _CORE)
 
 # Set compile options.
 if(MSVC)

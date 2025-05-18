@@ -15,9 +15,9 @@ endif()
 
 # List native source files (adjust paths as required)
 set(NATIVE_SOURCES
-    mod_core.cpp
-    freeswitch_core.cpp
-    freeswitch_wrap.cxx
+    ./mod_core.cpp
+    ./freeswitch_core.cpp
+    ./freeswitch_wrap.cxx
 )
 
 # Create the shared library for the native module.
@@ -25,6 +25,7 @@ add_library(mod_core SHARED ${NATIVE_SOURCES})
 
 # Specify include directories for native code.
 target_include_directories(mod_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(mod_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../../include)
 
 # Define a preprocessor symbol for mod_core.
 target_compile_definitions(mod_core PRIVATE -DMOD_CORE)

@@ -5,7 +5,7 @@
   CMake is re-running because generate.stamp.list is missing.
   -- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.22631.
   -- Configuring done (0.1s)
-  -- Generating done (0.5s)
+  -- Generating done (0.4s)
   -- Build files have been written to: //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(237,5): warning MSB8064: Custom build for item "\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\b69ca2568af883c44b7fcc3d07088ca4\generate.stamp.rule" succeeded, but specified dependency "\\wsl.localhost\ubuntu\home\lysander\signalwire\mod_core\build\cmakefiles\b69ca2568af883c44b7fcc3d07088ca4\generate.stamp.rule" does not exist. This may cause incremental build to work incorrectly.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(237,5): warning MSB8064: Custom build for item "\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\b69ca2568af883c44b7fcc3d07088ca4\generate.stamp.rule" succeeded, but specified dependency "\\wsl.localhost\ubuntu\home\lysander\signalwire\mod_core\cmakelists.txt" does not exist. This may cause incremental build to work incorrectly.

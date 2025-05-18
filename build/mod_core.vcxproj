@@ -87,7 +87,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -107,10 +107,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;MOD_CORE;CMAKE_INTDIR=\"Debug\";mod_core_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -133,7 +133,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -154,10 +154,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MOD_CORE;CMAKE_INTDIR=\"Release\";mod_core_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -180,7 +180,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -201,10 +201,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MOD_CORE;CMAKE_INTDIR=\"MinSizeRel\";mod_core_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -227,7 +227,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -247,10 +247,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;MOD_CORE;CMAKE_INTDIR=\"RelWithDebInfo\";mod_core_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\include;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

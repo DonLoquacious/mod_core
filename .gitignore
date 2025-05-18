@@ -1,1 +1,4 @@
+.vs
+/build/.vs
 /core/obj/
+/core/bin/

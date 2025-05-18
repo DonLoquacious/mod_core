@@ -183,11 +183,9 @@ SWITCH_STANDARD_API(core_api_function)
 		return SWITCH_STATUS_SUCCESS;
 	}
 
-#ifdef _CORE
 	if (!(executeDelegate(cmd, stream, stream->param_event))) {
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_ERROR, "Execute failed for %s (unknown module or exception).\n", cmd);
 	}
-#endif
 
 	return SWITCH_STATUS_SUCCESS;
 }
@@ -200,12 +198,9 @@ SWITCH_STANDARD_APP(core_app_function)
 		return;
 	}
 
-#ifdef _CORE
 	if (!(runDelegate(data, session))) {
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_ERROR, "Application run failed for %s (unknown module or exception).\n", data);
 	}
-#endif
-
 }
 
 SWITCH_STANDARD_API(core_reload_api_function)
@@ -216,20 +211,16 @@ SWITCH_STANDARD_API(core_reload_api_function)
 		return SWITCH_STATUS_SUCCESS;
 	}
 
-#ifdef _CORE
 	if (!(reloadDelegate(cmd))) {
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_ERROR, "Execute failed for %s (unknown module or exception).\n", cmd);
 	}
-#endif
 
 	return SWITCH_STATUS_SUCCESS;
 }
 
 SWITCH_STANDARD_API(core_list_api_function)
 {
-#ifdef _CORE
 	listDelegate(cmd, stream, stream->param_event);
-#endif
 
 	return SWITCH_STATUS_SUCCESS;
 }

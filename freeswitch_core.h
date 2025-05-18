@@ -116,8 +116,8 @@ using namespace System::Runtime::InteropServices;
 
 public ref class FreeSwitchCore {
   public:
-	static Assembly^ core_dotnet_managed;
-	static MethodInfo^ loadMethod;
+	static Assembly ^ mod_dotnet_core;
+	static MethodInfo ^ loadMethod;
 };
 
 #endif

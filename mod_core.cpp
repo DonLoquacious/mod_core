@@ -72,7 +72,7 @@ switch_status_t loadRuntime()
     wchar_t modpath[256];
     mbstowcs(modpath, filename, 255);
     try {
-        FreeSwitchCore::core_dotnet_managed = Assembly::LoadFrom(gcnew String(modpath));
+        FreeSwitchCore::mod_dotnet_core = Assembly::LoadFrom(gcnew String(modpath));
     }
     catch(Exception^ ex) {
         IntPtr msg = Marshal::StringToHGlobalAnsi(ex->ToString());
@@ -87,7 +87,7 @@ switch_status_t loadRuntime()
 switch_status_t findLoader()
 {
     try {
-        FreeSwitchCore::loadMethod = FreeSwitchCore::core_dotnet_managed->GetType(MOD_CORE_IMAGE_NAME "." MOD_CORE_CLASS_NAME)->GetMethod("Load");
+        FreeSwitchCore::loadMethod = FreeSwitchCore::mod_dotnet_core->GetType(MOD_CORE_IMAGE_NAME "." MOD_CORE_CLASS_NAME)->GetMethod("Load");
     }
     catch(Exception^ ex) {
         IntPtr msg = Marshal::StringToHGlobalAnsi(ex->ToString());

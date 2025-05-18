@@ -1,0 +1,11 @@
+--- swig.cs.old	2025-02-20 18:02:13.533926197 +0000
++++ swig.cs	2025-02-20 18:02:47.789924127 +0000
+@@ -42574,7 +42574,7 @@
+     Dispose(false);
+   }
+ 
+-  public void Dispose() {
++  public virtual void Dispose() {
+     Dispose(true);
+     global::System.GC.SuppressFinalize(this);
+   }

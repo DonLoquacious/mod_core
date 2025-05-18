@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89A4A974-8CA1-3B64-934A-5BEB3AC242C2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>FreeSwitch.Core</ProjectName>
+    <TargetFramework>9.0</TargetFramework>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <ManagedAssembly>true</ManagedAssembly>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>FreeSwitch.Core</AssemblyName>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>FreeSwitch.Core</AssemblyName>
+    <DebugType>none</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <OutputPath>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\MinSizeRel\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>FreeSwitch.Core</AssemblyName>
+    <DebugType>none</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\RelWithDebInfo\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <PlatformToolset>v143</PlatformToolset>
+    <AssemblyName>FreeSwitch.Core</AssemblyName>
+    <DebugType>full</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <None Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\CMakeLists.txt">
+      <Link>CMakeLists.txt</Link>
+    </None>
+  </ItemGroup>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"
+    Name="CustomCommand_Debug_1bbd1c53303cd68319018f02a62d4589"
+    Inputs="//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCSharpCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCSharpInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake"
+    Outputs="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe&quot; -S//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core -B//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build --check-stamp-file //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Release|x64'"
+    Name="CustomCommand_Release_1bbd1c53303cd68319018f02a62d4589"
+    Inputs="//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCSharpCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCSharpInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake"
+    Outputs="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe&quot; -S//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core -B//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build --check-stamp-file //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"
+    Name="CustomCommand_MinSizeRel_1bbd1c53303cd68319018f02a62d4589"
+    Inputs="//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCSharpCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCSharpInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake"
+    Outputs="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe&quot; -S//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core -B//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build --check-stamp-file //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"
+    Name="CustomCommand_RelWithDebInfo_1bbd1c53303cd68319018f02a62d4589"
+    Inputs="//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCSharpCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeCXXCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeRCCompiler.cmake;\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\3.30.5-msvc23\CMakeSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCSharpInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake"
+    Outputs="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe&quot; -S//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core -B//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build --check-stamp-file //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <ItemGroup>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\AssemblyInfo.cs">
+      <Link>core\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\Extensions.cs">
+      <Link>core\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\Loader.cs">
+      <Link>core\Loader.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\Log.cs">
+      <Link>core\Log.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\ManagedSession.cs">
+      <Link>core\ManagedSession.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\PluginInterfaces.cs">
+      <Link>core\PluginInterfaces.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\PluginManager.cs">
+      <Link>core\PluginManager.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\ScriptPluginManager.cs">
+      <Link>core\ScriptPluginManager.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\ChannelVariables.cs">
+      <Link>core\ChannelVariables.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\Util.cs">
+      <Link>core\Util.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\swig.cs">
+      <Link>core\swig.cs</Link>
+    </Compile>
+    <Compile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\core\XmlSearchBinding.cs">
+      <Link>core\XmlSearchBinding.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\ZERO_CHECK.vcxproj">
+      <Project>{27562E96-C776-3644-8757-68201F3346C9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'MinSizeRel'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'RelWithDebInfo'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      CustomCommand_Debug_1bbd1c53303cd68319018f02a62d4589;
+      CustomCommand_MinSizeRel_1bbd1c53303cd68319018f02a62d4589;
+      CustomCommand_RelWithDebInfo_1bbd1c53303cd68319018f02a62d4589;
+      CustomCommand_Release_1bbd1c53303cd68319018f02a62d4589;
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

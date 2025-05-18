@@ -10,15 +10,29 @@ typedef int int32_t;
 typedef long long int64_t;
 typedef unsigned long in_addr_t;
 
-%typemap(csin,
-    pre="var $csinput_ptr = global::System.IntPtr.Zero;",
-    post="if ($csinput_ptr != global::System.IntPtr.Zero) {\n    $csinput = global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi($csinput_ptr);\n} else {\n    $csinput = null;\n}"
-) const char ** "ref $csinput_ptr"
+%typemap(imtype, out="string") char ** "ref string"
+%typemap(cstype, out="string") char ** "ref string"
+%typemap(csin) char **     "ref $csinput"
+%typemap(csvarin) char **
+%{
+  set { $imcall; }
+%}
+%typemap(csvarout) char **
+%{
+  get {
+    return $imcall;
+  }
+%}
 
+%typemap(imtype, out="string") const char ** "ref global::System.IntPtr"
+%typemap(cstype, out="string") const char ** "out string"
 %typemap(csin,
-    pre="var $csinput_ptr = global::System.IntPtr.Zero;",
-    post="if ($csinput_ptr != global::System.IntPtr.Zero) {\n    $csinput = global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi($csinput_ptr);\n} else {\n    $csinput = null;\n}"
-) char ** "ref $csinput_ptr"
+        pre="var $csinput_ptr = global::System.IntPtr.Zero;",
+        post="if($csinput_ptr != global::System.IntPtr.Zero)\n"
+             "\t$csinput = global::System.Runtime.InteropServices.Marshal.PtrToStringAnsi($csinput_ptr);\n"
+             "else\n"
+             "\t$csinput = null;"
+) const char ** "ref $csinput_ptr"
 
 %newobject EventConsumer::pop;
 %newobject Session;

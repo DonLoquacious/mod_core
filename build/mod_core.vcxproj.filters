@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\mod_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\freeswitch_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\freeswitch_wrap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BCA80179-E2BA-3601-A4B6-A972555914FD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

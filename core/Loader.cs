@@ -1,5 +1,5 @@
 ﻿/* 
- * FreeSWITCH Modular Media Switching Software Library / Soft-Switch Application - mod_managed
+ * FreeSWITCH Modular Media Switching Software Library / Soft-Switch Application - mod_core
  * Copyright (C) 2008, Michael Giagnocavo <mgg@giagnocavo.net>
  *
  * Version: MPL 1.1
@@ -14,7 +14,7 @@
  * for the specific language governing rights and limitations under the
  * License.
  *
- * The Original Code is FreeSWITCH Modular Media Switching Software Library / Soft-Switch Application - mod_managed
+ * The Original Code is FreeSWITCH Modular Media Switching Software Library / Soft-Switch Application - mod_core
  *
  * The Initial Developer of the Original Code is
  * Michael Giagnocavo <mgg@giagnocavo.net>
@@ -28,7 +28,7 @@
  * Jeff Lenk <jeff@jefflenk.com>
  * Artur Kraev <ravenox@gmail.com>
  * 
- * Loader.cs -- mod_managed loader
+ * Loader.cs -- mod_core loader
  *
  */
 
@@ -54,7 +54,7 @@ namespace FreeSWITCH {
         static readonly ReloadDelegate _reload = Reload;
         static readonly ListDelegate _list = List;
         
-        [DllImport("mod_managed", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("mod_core", CharSet = CharSet.Ansi, CallingConvention = CallingConvention.Cdecl)]
         static extern void InitManagedDelegates(RunDelegate run, ExecuteDelegate execute, ExecuteBackgroundDelegate executeBackground, ReloadDelegate reload, ListDelegate list);
 
         static readonly object loaderLock = new object();

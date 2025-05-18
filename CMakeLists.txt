@@ -15,9 +15,9 @@ endif()
 
 # List native source files (adjust paths as required)
 set(NATIVE_SOURCES
-    src/mod_core.cpp
-    src/freeswitch_core.cpp
-    src/freeswitch_wrap.cxx
+    mod_core.cpp
+    freeswitch_core.cpp
+    freeswitch_wrap.cxx
 )
 
 # Create the shared library for the native module.
@@ -62,7 +62,7 @@ add_library(FreeSwitch.Core SHARED ${CS_SOURCES})
 # Set Visual Studio-specific properties:
 # Targeting .NET 5.0; adjust target framework version if necessary.
 set_target_properties(FreeSwitch.Core PROPERTIES
-    VS_DOTNET_TARGET_FRAMEWORK_VERSION "v9.0"  # Change to "v5.0" or "v9.0" as needed.
+    DOTNET_TARGET_FRAMEWORK "9.0"
     VS_DOTNET_OUTPUT_TYPE "Library"
     VS_DOTNET_REFERENCES "System;System.Core;Microsoft.CSharp;System.Xml.Linq;System.Data.DataSetExtensions;System.Data;System.Xml"
     VS_DOTNET_ROOTNAMESPACE "FreeSwitch.Core"

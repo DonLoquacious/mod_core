@@ -1,0 +1,5 @@
+//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/mod_core.dir
+//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/FreeSwitch.Core.dir
+//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/INSTALL.dir
+//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/ALL_BUILD.dir
+//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/ZERO_CHECK.dir

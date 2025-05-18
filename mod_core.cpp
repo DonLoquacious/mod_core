@@ -63,8 +63,7 @@ SWITCH_MOD_DECLARE_NONSTD(void) InitManagedSession(ManagedSession *session, inpu
     session->hangupDelegate = hangupDelegate;
 }
 
-#include <shlobj.h>
-
+#ifdef _CORE
 switch_status_t loadRuntime()
 {
     char filename[256];
@@ -101,6 +100,7 @@ switch_status_t findLoader()
 
     return SWITCH_STATUS_SUCCESS;
 }
+#endif
 
 SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
 {
@@ -119,6 +119,7 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
         return SWITCH_STATUS_FALSE;
     }
 
+#ifdef _CORE
 	try {
         Object^ objResult = FreeSwitchCore::loadMethod->Invoke(nullptr, nullptr);
         success = *reinterpret_cast<bool^>(objResult);
@@ -131,6 +132,7 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
 
         return SWITCH_STATUS_FALSE;
     }
+#endif
 
     if (success) {
         switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_DEBUG, "Load completed successfully.\n");
@@ -151,6 +153,10 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_core_load)
 
     return SWITCH_STATUS_NOUNLOAD;
 }
+
+#ifdef _CORE
+#pragma unmanaged
+#endif
 
 SWITCH_STANDARD_API(core_run_api_function)
 {
@@ -177,9 +183,11 @@ SWITCH_STANDARD_API(core_api_function)
 		return SWITCH_STATUS_SUCCESS;
 	}
 
+#ifdef _CORE
 	if (!(executeDelegate(cmd, stream, stream->param_event))) {
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_ERROR, "Execute failed for %s (unknown module or exception).\n", cmd);
 	}
+#endif
 
 	return SWITCH_STATUS_SUCCESS;
 }
@@ -192,9 +200,12 @@ SWITCH_STANDARD_APP(core_app_function)
 		return;
 	}
 
+#ifdef _CORE
 	if (!(runDelegate(data, session))) {
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_ERROR, "Application run failed for %s (unknown module or exception).\n", data);
 	}
+#endif
+
 }
 
 SWITCH_STANDARD_API(core_reload_api_function)
@@ -205,16 +216,21 @@ SWITCH_STANDARD_API(core_reload_api_function)
 		return SWITCH_STATUS_SUCCESS;
 	}
 
+#ifdef _CORE
 	if (!(reloadDelegate(cmd))) {
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_ERROR, "Execute failed for %s (unknown module or exception).\n", cmd);
 	}
+#endif
 
 	return SWITCH_STATUS_SUCCESS;
 }
 
 SWITCH_STANDARD_API(core_list_api_function)
 {
+#ifdef _CORE
 	listDelegate(cmd, stream, stream->param_event);
+#endif
+
 	return SWITCH_STATUS_SUCCESS;
 }
 

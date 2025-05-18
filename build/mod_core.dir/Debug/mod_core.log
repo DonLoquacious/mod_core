@@ -9,8 +9,8 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v17
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): warning MSB8064: Custom build for item "\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\CMakeLists.txt" succeeded, but specified dependency "\\wsl.localhost\ubuntu\home\lysander\signalwire\mod_core\build\cmakefiles\3.30.5-msvc23\cmakesystem.cmake" does not exist. This may cause incremental build to work incorrectly.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): warning MSB8065: Custom build for item "\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\CMakeLists.txt" succeeded, but specified output "\\wsl.localhost\ubuntu\home\lysander\signalwire\mod_core\build\cmakefiles\generate.stamp" has not been created. This may cause incremental build to work incorrectly.
   mod_core.cpp
-\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\mod_core.cpp(1,10): error C1083: Cannot open include file: 'switch.h': No such file or directory
   freeswitch_core.cpp
+\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\mod_core.cpp(1,10): error C1083: Cannot open include file: 'switch.h': No such file or directory
 \\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\freeswitch_core.cpp(1,10): error C1083: Cannot open include file: 'switch.h': No such file or directory
   freeswitch_wrap.cxx
 \\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\freeswitch_wrap.cxx(361,10): error C1083: Cannot open include file: 'switch.h': No such file or directory

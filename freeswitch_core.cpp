@@ -26,7 +26,7 @@ ManagedSession::~ManagedSession() {
 			switch_channel_hangup(channel, SWITCH_CAUSE_NORMAL_CLEARING); setAutoHangup(0);
 		}
 
-		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_TRACE, "Unsetting CoreSetting for channel.");
+		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_DEBUG, "Unsetting CoreSetting for channel.");
 		switch_channel_set_private(channel, "CoreSession", NULL);
 	}
 }
@@ -38,7 +38,7 @@ void ManagedSession::check_hangup_hook() {
 		return;
 	}
 
-	switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_TRACE, "Executing hangup delegate.");
+	switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_DEBUG, "Executing hangup delegate.");
 	hangupDelegate();
 }
 
@@ -49,7 +49,7 @@ switch_status_t ManagedSession::run_dtmf_callback(void *input, switch_input_type
 		return SWITCH_STATUS_FALSE;
 	}
 
-	switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_TRACE, "Executing DTMF delegate.");
+	switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_DEBUG, "Executing DTMF delegate.");
 	char *result = dtmfDelegate(input, itype);
 	switch_status_t status = process_callback_result(result);
 	RESULT_FREE(result);

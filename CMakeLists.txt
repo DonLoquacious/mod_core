@@ -4,6 +4,19 @@ cmake_minimum_required(VERSION 3.18)
 # and a managed (.NET) assembly (FreeSwitch.Core) using CMake's CSharp support.
 project(mod_core LANGUAGES CXX CSharp)
 
+# Create a symlink to w32 to re-use the FS VS2017 project file and props
+get_filename_component(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}" ABSOLUTE)
+get_filename_component(PROJECT_ROOT "${PROJECT_ROOT}" DIRECTORY)
+get_filename_component(PROJECT_ROOT "${PROJECT_ROOT}" DIRECTORY)
+get_filename_component(PROJECT_ROOT "${PROJECT_ROOT}" DIRECTORY)
+get_filename_component(PROJECT_ROOT "${PROJECT_ROOT}" DIRECTORY)
+
+message(STATUS "PROJECT ROOT SET TO ${PROJECT_ROOT}")
+message(STATUS "Copying FS w32 directory to build folder.")
+
+set(FSW32_SOURCE "${PROJECT_ROOT}/w32")
+file(COPY "${FSW32_SOURCE}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
+
 # Ensure multi-configuration is enabled if not already set.
 if(NOT CMAKE_CONFIGURATION_TYPES)
   set(CMAKE_CONFIGURATION_TYPES Debug Release)
@@ -27,7 +40,7 @@ add_library(mod_core SHARED ${NATIVE_SOURCES})
 target_include_directories(mod_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../../include)
 
 # Define a preprocessor symbol for mod_core.
-target_compile_definitions(mod_core PRIVATE _CORE)
+target_compile_definitions(mod_core PRIVATE MOD_EXPORTS _CORE)
 
 # Set compile options.
 if(MSVC)
@@ -74,6 +87,11 @@ set_target_properties(FreeSwitch.Core PROPERTIES
 
 # Ensure that the managed assembly builds before the native module,
 # as the native code will load the managed assembly at runtime.
+set_target_properties(mod_core PROPERTIES VS_USER_PROPS "${CMAKE_CURRENT_SOURCE_DIR}/ExternalFSCore.props")
+
+# add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../../../w32/ ${CMAKE_CURRENT_BINARY_DIR}/FreeSwitchCore)
+# target_link_libraries(mod_core PRIVATE FreeSwitchCore)
+
 add_dependencies(mod_core FreeSwitch.Core)
 
 ###############################################################################

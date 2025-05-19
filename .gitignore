@@ -1,4 +1,5 @@
 .vs
 /build/.vs
+/build/w32/
 /core/obj/
 /core/bin/

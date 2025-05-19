@@ -1,2 +1,2 @@
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.43.34808:TargetPlatformVersion=10.0.22621.0:
-Debug|x64|\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\|
+Debug|x64|\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\|

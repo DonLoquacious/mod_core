@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{42BEBB6C-4F6A-3FB5-96DD-1429B87F021E}</ProjectGuid>
+    <ProjectGuid>{91E1B8BC-EBE2-30BE-96BE-48A14519E01B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -125,7 +125,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\b69ca2568af883c44b7fcc3d07088ca4\INSTALL_force.rule">
+    <CustomBuild Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\CMakeFiles\8c1df95d6680302c187c50dbfcdd8a23\INSTALL_force.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
@@ -138,7 +138,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
@@ -153,7 +153,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
@@ -168,7 +168,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
@@ -183,20 +183,20 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\ZERO_CHECK.vcxproj">
-      <Project>{27562E96-C776-3644-8757-68201F3346C9}</Project>
+    <ProjectReference Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\ZERO_CHECK.vcxproj">
+      <Project>{6D0C0A84-4269-3ECE-A3E4-F4E4A6456AF9}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\ALL_BUILD.vcxproj">
-      <Project>{682A949F-308D-3B58-9391-A01B18259D70}</Project>
+    <ProjectReference Include="\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\ALL_BUILD.vcxproj">
+      <Project>{0A1E1120-E46B-3CF4-A9EB-956483DDFCC3}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

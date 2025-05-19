@@ -1,9 +1,9 @@
 # CMake generation dependency list for this directory.
-//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/CMakeLists.txt
-//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeCSharpCompiler.cmake
-//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeCXXCompiler.cmake
-//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeRCCompiler.cmake
-//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeSystem.cmake
+//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/CMakeLists.txt
+//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeCSharpCompiler.cmake
+//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeCXXCompiler.cmake
+//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeRCCompiler.cmake
+//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/3.30.5-msvc23/CMakeSystem.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeCSharpInformation.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake
 C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake

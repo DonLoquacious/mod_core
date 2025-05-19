@@ -1,4 +1,4 @@
-# Install script for directory: //wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core
+# Install script for directory: //wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,7 +42,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Debug/mod_core.lib")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Debug/mod_core.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/mod_core.lib")
@@ -52,7 +52,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Release/mod_core.lib")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Release/mod_core.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/mod_core.lib")
@@ -62,7 +62,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/MinSizeRel/mod_core.lib")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/MinSizeRel/mod_core.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/mod_core.lib")
@@ -72,7 +72,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/RelWithDebInfo/mod_core.lib")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/RelWithDebInfo/mod_core.lib")
   endif()
 endif()
 
@@ -86,7 +86,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Debug/mod_core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Debug/mod_core.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/mod_core.dll")
@@ -96,7 +96,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Release/mod_core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Release/mod_core.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/mod_core.dll")
@@ -106,7 +106,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/MinSizeRel/mod_core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/MinSizeRel/mod_core.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/mod_core.dll")
@@ -116,19 +116,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/RelWithDebInfo/mod_core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/RelWithDebInfo/mod_core.dll")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-MinSizeRel.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-MinSizeRel.cmake" OPTIONAL)
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-RelWithDebInfo.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/mod_core.dir/install-cxx-module-bmi-RelWithDebInfo.cmake" OPTIONAL)
   endif()
 endif()
 
@@ -142,7 +142,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Debug/")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Debug/")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/core/")
@@ -152,7 +152,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Release/")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Release/")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/core/")
@@ -162,7 +162,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/MinSizeRel/")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/MinSizeRel/")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/core/")
@@ -172,7 +172,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/RelWithDebInfo/")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE STATIC_LIBRARY OPTIONAL FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/RelWithDebInfo/")
   endif()
 endif()
 
@@ -186,7 +186,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Debug/FreeSwitch.Core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Debug/FreeSwitch.Core.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/core/FreeSwitch.Core.dll")
@@ -196,7 +196,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/Release/FreeSwitch.Core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/Release/FreeSwitch.Core.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/core/FreeSwitch.Core.dll")
@@ -206,7 +206,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/MinSizeRel/FreeSwitch.Core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/MinSizeRel/FreeSwitch.Core.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/mod_core/modules/core/FreeSwitch.Core.dll")
@@ -216,19 +216,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/RelWithDebInfo/FreeSwitch.Core.dll")
+    file(INSTALL DESTINATION "C:/Program Files (x86)/mod_core/modules/core" TYPE SHARED_LIBRARY FILES "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/RelWithDebInfo/FreeSwitch.Core.dll")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-MinSizeRel.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-MinSizeRel.cmake" OPTIONAL)
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-RelWithDebInfo.cmake" OPTIONAL)
+    include("//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/CMakeFiles/FreeSwitch.Core.dir/install-cxx-module-bmi-RelWithDebInfo.cmake" OPTIONAL)
   endif()
 endif()
 
@@ -247,6 +247,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "//wsl.localhost/Ubuntu/home/lysander/signalwire/mod_core/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "//wsl.localhost/Ubuntu/home/lysander/signalwire/signalwire-freeswitch/src/signalwire-freeswitch/freeswitch/src/mod/languages/mod_core/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

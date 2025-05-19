@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\w32\Library\FreeSwitchCore.2017.vcxproj">
+      <Project>{202d7a4e-760d-4d0e-afa1-d7459ced30ff}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <switch_versionPropsImported>1</switch_versionPropsImported>
+    <OpensslPropsImported>1</OpensslPropsImported>
+    <CurlPropsImported>1</CurlPropsImported>
+    <libpcapVersionImported>1</libpcapVersionImported>
+    <pcrePropsImported>1</pcrePropsImported>
+  </PropertyGroup>
+</Project>

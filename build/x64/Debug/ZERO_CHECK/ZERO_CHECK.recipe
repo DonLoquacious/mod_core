@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>\\wsl.localhost\Ubuntu\home\lysander\signalwire\mod_core\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>\\wsl.localhost\Ubuntu\home\lysander\signalwire\signalwire-freeswitch\src\signalwire-freeswitch\freeswitch\src\mod\languages\mod_core\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
